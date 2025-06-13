@@ -1,14 +1,6 @@
 /*----------------------------configuracion-------------------------------------*/
 
 
-div  {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 20px 0;
-}
-
 .config-container {
     max-width: 400px;
     margin: 0 auto;
