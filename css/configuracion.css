@@ -1,5 +1,9 @@
 /*----------------------------configuracion-------------------------------------*/
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 33b016ac4c57875b64afd8fb8dae5bd468cb88ce
 .config-container {
     max-width: 400px;
     margin: 0 auto;
@@ -14,6 +18,7 @@
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+<<<<<<< HEAD
 
         
 .cambiarcontraseña {
@@ -21,3 +26,5 @@
     padding: 8px;   
 }
 
+=======
+>>>>>>> 33b016ac4c57875b64afd8fb8dae5bd468cb88ce
