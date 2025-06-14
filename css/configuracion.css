@@ -1,6 +1,5 @@
 /*----------------------------configuracion-------------------------------------*/
 
-
 .config-container {
     max-width: 400px;
     margin: 0 auto;
@@ -16,9 +15,8 @@
     border-radius: 3px;
 }
 
+
 .cambiar {
     width: 100%;
     padding: 8px;   
 }
-
-
