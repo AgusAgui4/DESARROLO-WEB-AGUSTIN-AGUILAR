@@ -22,6 +22,17 @@ main {
   margin-top: 20px; 
 }
 
+/* Estilo del footer */
+footer {
+  background-color: #333; 
+  color: white; 
+  text-align: center; 
+  padding: 20px; 
+  width: 100%; 
+  position: relative; 
+}
+
+
 /* Logo responsivo */
 .logo {
   height: 35px;
@@ -129,12 +140,3 @@ nav ul li a {
 }
 
 
-/* Estilo del footer */
-footer {
-  background-color: #333; 
-  color: white; 
-  text-align: center; 
-  padding: 20px; 
-  width: 100%; 
-  position: relative; 
-}
