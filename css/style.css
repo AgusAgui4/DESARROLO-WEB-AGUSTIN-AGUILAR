@@ -5,9 +5,21 @@
   box-sizing: border-box;
 }
 
-/* Fondo */
-body {
-  background-color: rgb(207, 207, 207);
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Asegura que el contenido se alinee al principio */
+}
+
+/* Contenedor principal */
+main {
+  flex-grow: 1; /* Esto permite que el contenido principal ocupe el espacio restante */
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px; 
 }
 
 /* Logo responsivo */
@@ -45,7 +57,7 @@ body {
     padding: 10px;
     grid-template-columns: repeat(1, 1fr);  /* 1 columna en total, para que las imágenes ocupen filas */
     grid-template-rows: repeat(3, 1fr);    /* 3 filas iguales */
-    gap: 10px;  /* Espacio entre las imágenes */
+    gap: 10px;  
   }
 
   .img-wrapper {
@@ -53,6 +65,7 @@ body {
     height: 100%; 
   }
 }
+
 /* === Breakpoint: Tablets === */
 @media (min-width: 768px) and (max-width: 1023px) {
   .contenido {
@@ -113,4 +126,15 @@ nav ul li a {
   color: white;
   font-size: 1.2em;
   transition: color 0.3s ease;
+}
+
+
+/* Estilo del footer */
+footer {
+  background-color: #333; 
+  color: white; 
+  text-align: center; 
+  padding: 20px; 
+  width: 100%; 
+  position: relative; 
 }
