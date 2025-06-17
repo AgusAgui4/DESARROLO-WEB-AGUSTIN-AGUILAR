@@ -1,104 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Inicio</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
 
-  <body>
-    <!-- Navbar con Bootstrap -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inicio</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <!-- Columna izquierda: Logo + Título -->
-    <div class="d-flex align-items-center">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="./img/filmsfree.png" alt="Logo de la empresa" class="logo" />
-        <h1 class="text-white fs-4 ms-2 mb-0">Bienvenido a Filmsfree</h1>
-      </a>
-    </div>
+<body>
+  <!-- Navbar con Bootstrap -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
 
-    <!-- Columna centro: Buscador -->
-    <div class="search-wrapper">
-      <form class="d-flex justify-content-center" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-    </div>
-
-    <!-- Columna derecha: Menú -->
-    <div class="d-flex align-items-center">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarContenido">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link fs-5" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fs-5" href="#" id="paginasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Páginas
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="paginasDropdown">
-              <li><a class="dropdown-item" href="./pages/acerca.html">Acerca</a></li>
-              <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
-              <li><a class="dropdown-item" href="./pages/noticias.html">Noticias</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-5" href="./pages/configuracion.html">Configuración</a>
-          </li>
-        </ul>
+      <!-- Columna izquierda: Logo + Título -->
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./img/filmsfree.png" alt="Logo de la empresa" class="logo" />
+          <h1 class="text-white fs-4 ms-2 mb-0">Bienvenido a Filmsfree</h1>
+        </a>
       </div>
-    </div>
 
-  </div>
-</nav>
+      <!-- Columna centro: Buscador -->
+      <div class="search-wrapper">
+        <form class="d-flex justify-content-center" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
 
+      <!-- Columna derecha: Menú -->
+      <div class="d-flex align-items-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido"
+          aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-
-
-
-    <main>
-      <section>
-        <h2>Contenido Principal</h2>
-        <h3 style="margin-top: 40px; margin-bottom: 10px; padding-left: 29px">
-          PELICULAS POPULARES.
-        </h3>
-        <div class="contenido">
-          <div class="img-wrapper">
-            <img src="https://pics.filmaffinity.com/El_eternauta_Serie_de_TV-575950349-large.jpg" alt="Imagen 1" />
-          </div>
-          <div class="img-wrapper">
-            <img
-              src="https://play-lh.googleusercontent.com/TYJwXEej9Tplm5kNtapfCm_UD3aHzObLlEmXISr34QO0XeT4b7Veku_3fevW4isS3Ti5dA"
-              alt="Imagen 2" />
-          </div>
-          <div class="img-wrapper">
-            <img
-              src="https://hips.hearstapps.com/hmg-prod/images/vengadores-infinity-war-665751618a01b.jpg?crop=1xw:1xh;center,top&resize=980:*"
-              alt="Imagen 3" />
-          </div>
-          <div class="img-wrapper">
-            <img
-              src="https://i0.wp.com/www.sol915.com.ar/wp-content/uploads/2021/04/shang-chi-poster-fotogramas-1618847295.jpeg?fit=1200%2C1777&ssl=1"
-              alt="Imagen 4" />
-          </div>
+        <div class="collapse navbar-collapse" id="navbarContenido">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-5" href="#" id="paginasDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Páginas
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="paginasDropdown">
+                <li><a class="dropdown-item" href="./pages/acerca.html">Acerca</a></li>
+                <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+                <li><a class="dropdown-item" href="./pages/noticias.html">Noticias</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="./pages/configuracion.html">Configuración</a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-      </section>
-    </main>
+    </div>
+  </nav>
 
-    <footer>
-      <p>&copy; 2025 Mi Sitio Web - Todos los derechos reservados.</p>
-    </footer>
 
-    <!-- Bootstrap JS con Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+
+
+
+  <main>
+    <section>
+      <h2>Contenido Principal</h2>
+      <h3 style="margin-top: 40px; margin-bottom: 10px; padding-left: 29px">
+        PELICULAS POPULARES.
+      </h3>
+      <div class="contenido">
+        <div class="img-wrapper">
+          <img src="https://pics.filmaffinity.com/El_eternauta_Serie_de_TV-575950349-large.jpg" alt="Imagen 1" />
+        </div>
+        <div class="img-wrapper">
+          <img
+            src="https://play-lh.googleusercontent.com/TYJwXEej9Tplm5kNtapfCm_UD3aHzObLlEmXISr34QO0XeT4b7Veku_3fevW4isS3Ti5dA"
+            alt="Imagen 2" />
+        </div>
+        <div class="img-wrapper">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/vengadores-infinity-war-665751618a01b.jpg?crop=1xw:1xh;center,top&resize=980:*"
+            alt="Imagen 3" />
+        </div>
+        <div class="img-wrapper">
+          <img
+            src="https://i0.wp.com/www.sol915.com.ar/wp-content/uploads/2021/04/shang-chi-poster-fotogramas-1618847295.jpeg?fit=1200%2C1777&ssl=1"
+            alt="Imagen 4" />
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mi Sitio Web - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS con Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
