@@ -22,9 +22,20 @@ main {
   margin-top: 20px; 
 }
 
+/* Estilo del footer */
+footer {
+  background-color: #333; 
+  color: white; 
+  text-align: center; 
+  padding: 20px; 
+  width: 100%; 
+  position: relative; 
+}
+
+
 /* Logo responsivo */
 .logo {
-  height: 35px;
+  height: 65px;
   transition: height 0.3s ease;
 }
 
@@ -55,7 +66,7 @@ main {
     display: grid;
     overflow-x: auto;
     padding: 10px;
-    grid-template-columns: repeat(1, 1fr);  /* 1 columna en total, para que las imágenes ocupen filas */
+    grid-template-columns: repeat(1, 1fr);  
     grid-template-rows: repeat(3, 1fr);    /* 3 filas iguales */
     gap: 10px;  
   }
@@ -92,14 +103,6 @@ main {
   }
 }
 
-/* Header */
-header {
-  background-color: #5e67a6;
-  color: white;
-  padding: 1px;
-  text-align: center;
-}
-
 /* Título */
 header h1 {
   font-family: 'Arial', sans-serif;
@@ -126,15 +129,4 @@ nav ul li a {
   color: white;
   font-size: 1.2em;
   transition: color 0.3s ease;
-}
-
-
-/* Estilo del footer */
-footer {
-  background-color: #333; 
-  color: white; 
-  text-align: center; 
-  padding: 20px; 
-  width: 100%; 
-  position: relative; 
 }
