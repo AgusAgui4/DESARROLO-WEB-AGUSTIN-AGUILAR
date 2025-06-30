@@ -1,0 +1,42 @@
+
+// scss/_layout.scss
+footer {
+  background-color: $primary-color;
+  color: $text-light;
+  text-align: center;
+  padding: $padding-global;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  height: 65px;
+  transition: height $transition-speed ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+nav {
+  ul {
+    list-style: none;
+    @include flex-center;
+    padding: 0;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        text-decoration: none;
+        color: $text-light;
+        font-size: 1.2em;
+        transition: color $transition-speed ease;
+
+        &:hover {
+          color: lighten($text-light, 20%);
+        }
+      }
+    }
+  }
+}
