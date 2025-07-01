@@ -1,16 +1,13 @@
-
-
 // 1. Variables globales
 @import "abstracts/varibles";
 
-// 2. Mixins reutilizables
+// 2. Mixins
 @import "abstracts/mixin";
-// 3. Estilos base (reset, body, html, etc.)
+// 3. Estilos base y reset (reset, body, html)
 @import "base/reset";
 
-// 4. Layout general (footer, header, navegación)
+// 4. Layout (footer, header, nav, logo)
 @import "layout/layout";
 
-// 5. Componentes visuales (contenido, imagenes, animaciones, etc.)
+// 5. Componentes (contenido, imagenes, responsive)
 @import "components/components";
-

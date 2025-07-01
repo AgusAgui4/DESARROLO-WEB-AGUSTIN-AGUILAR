@@ -1,5 +1,3 @@
-
-// scss/_components.scss
 .contenido {
   display: grid;
   gap: $gap;
@@ -21,8 +19,6 @@
     }
   }
 }
-
-// Breakpoints
 
 @include breakpoint(0, 767px) {
   .contenido {
