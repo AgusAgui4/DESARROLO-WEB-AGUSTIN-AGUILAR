@@ -1,11 +1,8 @@
-
 .contenido-noticias {
   display: grid;
   gap: $gap;
   justify-items: center;
   padding: $padding-global;
-  
-
 
   .img-wrapper {
     position: relative;
@@ -21,12 +18,11 @@
       transition: all $transition-speed ease;
 
       &:hover {
-        transform: scale(1.10) rotateZ(1deg);
+        transform: scale(1.1) rotateZ(1deg);
       }
     }
   }
 }
-
 
 .contenido {
   display: grid;
@@ -48,7 +44,7 @@
       transition: all $transition-speed ease;
 
       &:hover {
-        transform: scale(1.10) rotateZ(1deg);
+        transform: scale(1.1) rotateZ(1deg);
       }
     }
 
@@ -67,7 +63,7 @@
       align-items: center;
       text-align: center;
       font-size: 35px;
-      overflow-y: auto; 
+      overflow-y: auto;
     }
 
     /* Para oscurecer la imagen cuando el resumen se muestra */

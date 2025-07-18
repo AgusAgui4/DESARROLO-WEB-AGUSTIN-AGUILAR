@@ -10,82 +10,80 @@
     width: 100%;
     height: 100%;
 
-    p{
-      font-size: 56px; 
+    p {
+      font-size: 56px;
     }
   }
 
-.btn-pelicula{
-  font-size: 2.5rem;
-}
-  p{
-    font-size: 46px; 
+  .btn-pelicula {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 46px;
   }
 
+  .contacto {
+    min-height: 100vh;
+    padding: 60px 20px;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.contacto {
-  min-height: 100vh;
-  padding: 60px 20px;
-  background-color: #111;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .contacto h2 {
+    font-size: 64px;
+    color: #00ff22;
+    text-align: center;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  }
 
-.contacto h2 {
-  font-size: 64px;
-  color: #00ff22;
-  text-align: center;
-  margin-bottom: 0px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-}
+  .contacto label {
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
 
-.contacto label {
-  display: block;
-  font-size: 40px;
-  color: #fff;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
+  .contacto input[type="text"],
+  .contacto input[type="email"],
+  .contacto textarea {
+    width: 100%;
+    max-width: 800px;
+    font-size: 72px;
+    padding: 20px;
+    border: 2px solid #00ff22;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 30px;
+  }
 
-.contacto input[type="text"],
-.contacto input[type="email"],
-.contacto textarea {
-  width: 100%;
-  max-width: 800px;
-  font-size: 72px;
-  padding: 20px;
-  border: 2px solid #00ff22;
-  border-radius: 10px;
-  background-color: #000;
-  color: #fff;
-  margin-bottom: 30px;
-}
+  .contacto textarea {
+    resize: vertical;
+    max-height: 350px;
+  }
 
-.contacto textarea {
-  resize: vertical;
-  max-height: 350px;
-}
+  .contacto input[type="submit"] {
+    font-size: 40px;
 
-.contacto input[type="submit"] {
-  font-size: 40px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  .contacto input[type="submit"]:hover {
+    background-color: #218838;
+  }
 
-.contacto input[type="submit"]:hover {
-  background-color: #218838;
-}
-
-.trailer-letra{
-  font-size: 40px;
-}
-
+  .trailer-letra {
+    font-size: 40px;
+  }
 }
 
 @include breakpoint(768px, 1023px) {
@@ -109,7 +107,6 @@
     height: 100%;
   }
 }
-
 
 .contacto {
   max-width: 600px;

@@ -60,8 +60,8 @@ footer p {
 }
 
 nav {
-   border-bottom: 2px solid #00ff22;
-    background: linear-gradient(to bottom, #000000, #303030);
+  border-bottom: 2px solid #00ff22;
+  background: linear-gradient(to bottom, #000000, #303030);
   ul {
     list-style: none;
     @include flex-center;
