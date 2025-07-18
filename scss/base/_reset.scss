@@ -25,6 +25,7 @@ body {
 }
 
 main {
+  min-height: 100%;
   animation: fadeInMain 1s ease-out forwards;
   animation-delay: 0s;
   flex-grow: 1;

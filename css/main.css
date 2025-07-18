@@ -24,6 +24,7 @@ body {
   }
 }
 main {
+  min-height: 100%;
   animation: fadeInMain 1s ease-out forwards;
   animation-delay: 0s;
   flex-grow: 1;
@@ -170,8 +171,8 @@ nav ul li a:hover {
 }
 .contenido-noticias .img-wrapper {
   position: relative;
-  width: 97%;
-  height: 97%;
+  max-width: 450px;
+  height: auto;
   overflow: hidden;
   border: 3px solid #333;
   border-radius: 15px;
@@ -248,7 +249,7 @@ nav ul li a:hover {
   transition: background-color 0.3s ease;
 }
 .btn-pelicula:hover {
-  background-color: rgba(0, 0, 0, 0.8); /* Efecto hover para los botones */
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 0) and (max-width: 767px) {

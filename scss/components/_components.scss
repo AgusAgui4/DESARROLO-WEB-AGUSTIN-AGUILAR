@@ -6,8 +6,8 @@
 
   .img-wrapper {
     position: relative;
-    width: 97%;
-    height: 97%;
+    max-width: 450px; 
+    height: auto; 
     overflow: hidden;
     border: 3px solid #333;
     border-radius: 15px;
@@ -88,6 +88,6 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Efecto hover para los botones */
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }

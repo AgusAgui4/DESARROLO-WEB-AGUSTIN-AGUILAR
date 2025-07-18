@@ -63,10 +63,6 @@
     </div>
   </nav>
 
-
-
-
-
   <main>
     <section class="contacto">
       <h2>Formulario de Contacto</h2>
@@ -83,15 +79,25 @@
         <input type="submit" value="Enviar" />
       </form>
     </section>
-  </main>
 
-  <script>
-    function mostrarAlerta() {
-      alert("Mensaje Enviado");
-      document.getElementById("formContacto").reset();  // Esto borra los datos del formulario
-      return false;  // Evita que el formulario se envíe y redirija la página.
-    }
-  </script>
+    <section class="info-contacto">
+      <h2>Información de Contacto</h2>
+      <p>Podés encontrarnos en nuestras redes o en la siguiente dirección:</p>
+      <ul style="font-size: 30px;">
+        <li>📍 Dirección: san carlos de bolivar</li>
+        <li>📞 Teléfono: +54 15 2314-575323</li>
+        <li>✉️ Email: contacto@filmsfree.com</li>
+      </ul>
+      <!-- mapa -->
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9995546681794!2d2.2922926156742134!3d48.85837317928788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdf8c865555%3A0x4cd35cccb578ad56!2sEiffel%20Tower!5e0!3m2!1ses!2sar!4v1623865376547!5m2!1ses!2sar"
+          width="95%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <div class="footer-content">
@@ -105,6 +111,13 @@
     </div>
   </footer>
 
+  <script>
+    function mostrarAlerta() {
+      alert("Mensaje Enviado");
+      document.getElementById("formContacto").reset();  // Esto borra los datos del formulario
+      return false; 
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
