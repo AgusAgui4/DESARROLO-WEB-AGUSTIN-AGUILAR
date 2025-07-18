@@ -13,10 +13,11 @@ body {
   background-repeat: no-repeat;
 }
 
+/*aparece progresivamente desde abajo*/
 @keyframes fadeInMain {
   from {
     opacity: 0;
-    transform: translateY(30px); /* Aparece desde abajo */
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -252,7 +253,20 @@ nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media (min-width: 0) and (max-width: 767px) {
+/* Mobile (0 - 767px) */
+@media (max-width: 767px) {
+  /*aparece progresivamente pero en el lugar*/
+  @keyframes fadeInMain {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  main {
+    animation: fadeInMain 4s ease-out forwards;
+  }
   .contenido {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -328,6 +342,7 @@ nav ul li a:hover {
     font-size: 40px;
   }
 }
+/* Tablet (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .contenido {
     grid-template-columns: repeat(2, 1fr);
@@ -337,6 +352,7 @@ nav ul li a:hover {
     height: 100%;
   }
 }
+/* Desktop (1024px en adelante) */
 @media (min-width: 1024px) {
   .contenido {
     grid-template-columns: repeat(4, 1fr);
@@ -346,6 +362,7 @@ nav ul li a:hover {
     height: 100%;
   }
 }
+/* Contacto - estilos generales */
 .contacto {
   max-width: 600px;
   margin: 40px auto;
@@ -356,13 +373,16 @@ nav ul li a:hover {
   color: #fff;
   font-family: Arial, sans-serif;
 }
+
 .contacto h2 {
   text-align: center;
   color: #00ff22;
 }
+
 .contacto label {
   font-weight: bold;
 }
+
 .contacto input[type=text],
 .contacto input[type=email],
 .contacto textarea,
@@ -376,12 +396,15 @@ nav ul li a:hover {
   color: #fff;
   font-size: 1rem;
 }
+
 .contacto input[type=submit] {
   background: #00ff22;
   color: #000;
   font-weight: bold;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
+
 .contacto input[type=submit]:hover {
   background: #00cc1a;
 }

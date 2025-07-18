@@ -4,19 +4,19 @@
   box-sizing: border-box;
 }
 
-
 body {
-  background: linear-gradient(to bottom, #ffffff, #222222); /* Degradado en body */
+  background: linear-gradient(to bottom,#ffffff,#222222); /* Degradado en body */
   display: flex;
   flex-direction: column;
   font-family: "Arial", sans-serif;
   background-repeat: no-repeat;
 }
 
+/*aparece progresivamente desde abajo*/
 @keyframes fadeInMain {
   from {
     opacity: 0;
-    transform: translateY(30px); /* Aparece desde abajo */
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -36,4 +36,3 @@ main {
   align-items: center;
   margin: $padding-global;
 }
-
