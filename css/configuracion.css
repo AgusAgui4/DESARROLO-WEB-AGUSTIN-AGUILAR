@@ -1,22 +1,102 @@
 /*----------------------------configuracion-------------------------------------*/
 
+
+#config {
+  max-width: 600px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6); 
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  color: white;
+}
+
+#config h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00ff22;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#config p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #eee;
+}
+
 .config-container {
-    max-width: 400px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-#config input[type="text"],
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+.config-container label {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.config-container input,
+.config-container select {
+  padding: 10px;
+  border: 2px solid #00ff22;
+  border-radius: 10px;
+  background-color: #222;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.config-container input:focus,
+.config-container select:focus {
+  outline: none;
+  border-color: #00ff88;
+}
+
+.config-container .cambiar {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #00ff22;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.config-container .cambiar:hover {
+  background-color: #00cc1a;
 }
 
 
-.cambiar {
-    width: 100%;
-    padding: 8px;
+
+@media (max-width: 600px) {
+  #config {
+    padding: 60px 30px;
+  }
+
+  #config h2 {
+    font-size: 3.5rem;
+  }
+
+  #config p {
+    font-size: 1.8rem;
+  }
+
+  .config-container label {
+    font-size: 1.8rem;
+  }
+
+  .config-container input,
+  .config-container select {
+    font-size: 1.8rem;
+    padding: 22px;
+  }
+
+  .config-container .cambiar {
+    font-size: 1.8rem;
+    padding: 24px;
+  }
 }

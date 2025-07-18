@@ -1,3 +1,33 @@
+
+.contenido-noticias {
+  display: grid;
+  gap: $gap;
+  justify-items: center;
+  padding: $padding-global;
+  
+
+
+  .img-wrapper {
+    position: relative;
+    width: 97%;
+    height: 97%;
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.856);
+
+    img {
+      @include responsive-img;
+      transition: all $transition-speed ease;
+
+      &:hover {
+        transform: scale(1.10) rotateZ(1deg);
+      }
+    }
+  }
+}
+
+
 .contenido {
   display: grid;
   gap: $gap;
@@ -5,54 +35,110 @@
   padding: $padding-global;
 
   .img-wrapper {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    position: relative;
+    width: 97%;
+    height: 97%;
+    border: 2px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.856);
+    overflow: hidden; /* Para asegurarnos de que los resúmenes no sobresalgan de los bordes */
 
     img {
       @include responsive-img;
       transition: all $transition-speed ease;
 
       &:hover {
-        transform: scale(1.05) rotateZ(1deg);
+        transform: scale(1.10) rotateZ(1deg);
       }
+    }
+
+    /* Resumen que aparece sobre la imagen */
+    .resumen-pelicula {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.692); /* Fondo oscuro */
+      color: white;
+      padding: 20px;
+      display: none; /* Inicialmente oculto */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 35px;
+      overflow-y: auto; 
+    }
+
+    /* Para oscurecer la imagen cuando el resumen se muestra */
+    &.active img {
+      opacity: 1;
     }
   }
 }
 
-@include breakpoint(0, 767px) {
-  .contenido {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    overflow-x: auto;
+.btn-pelicula {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Efecto hover para los botones */
+  }
+}
+
+
+
+.contacto {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  color: #fff;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    text-align: center;
+    color: #00ff22;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  input[type="submit"] {
+    width: 100%;
     padding: 10px;
+    margin-top: 8px;
+    border: 2px solid #00ff22;
+    border-radius: 10px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
   }
 
-  .img-wrapper {
-    width: 100%;
-    height: 100%;
-  }
-}
+  input[type="submit"] {
+    background: #00ff22;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
 
-@include breakpoint(768px, 1023px) {
-  .contenido {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .img-wrapper {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@include breakpoint(1024px) {
-  .contenido {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .img-wrapper {
-    width: 100%;
-    height: 100%;
+    &:hover {
+      background: #00cc1a;
+    }
   }
 }
